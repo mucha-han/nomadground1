@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRANGE FRAME 展 : 수상한 틀 VER.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 50%, #1a1a1a 100%);
+            min-height: 100vh;
+        }
+        
+        .title-font {
+            font-family: 'Bebas Neue', cursive;
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        
+        .red-glow {
+            box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+        }
+        
+        .poster-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        
+        .poster-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 0%, rgba(220, 38, 38, 0.1) 50%, transparent 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .booking-btn {
+            background: linear-gradient(45deg, #dc2626, #991b1b);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .booking-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(220, 38, 38, 0.8);
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(220, 38, 38, 0.8);
+            }
+        }
+        
+        .info-card {
+            background: rgba(30, 30, 30, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+        }
+        
+        .prologue-text {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #dc2626, transparent);
+            height: 2px;
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body class="text-white">
+    
+    <!-- Header -->
+    <header class="relative py-8 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="title-font text-4xl md:text-6xl lg:text-7xl font-black text-shadow mb-4">
+                <span class="text-red-500">STRANGE</span> 
+                <span class="text-white">FRAME</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-red-400 font-medium text-shadow">
+                수상한 틀 VER.2
+            </p>
+            <div class="mt-6 text-gray-300">
+                <p class="text-lg">한 번도 경험해보지 못한 스릴러 展</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- Poster Section -->
+        <section class="mb-12">
+            <div class="poster-container max-w-2xl mx-auto">
+                <img src="https://page.gensparksite.com/v1/base64_upload/50b3de023ca6ba0e86f89c0249015ce1" 
+                     alt="STRANGE FRAME 展 : 수상한 틀 VER.2 포스터" 
+                     class="w-full h-auto">
+            </div>
+        </section>
+
+        <!-- Exhibition Info -->
+        <section class="mb-12">
+            <div class="info-card rounded-lg p-8 max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-red-400 mb-6 text-center">
+                    <i class="fas fa-calendar-alt mr-3"></i>전시 정보
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 text-lg">
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-red-400 w-6 mr-3"></i>
+                            <div>
+                                <span class="text-gray-400">기간:</span>
+                                <span class="ml-2 font-medium">2025.08.30 ~ 2025.09.05</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-hourglass-half text-red-400 w-6 mr-3"></i>
+                            <div>
+                                <span class="text-gray-400">시간:</span>
+                                <span class="ml-2 font-medium">오후 1시 ~ 9시</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-red-400 w-6 mr-3"></i>
+                            <div>
+                                <span class="text-gray-400">장소:</span>
+                                <span class="ml-2 font-medium">향담갤러리</span>
+                                <br>
+                                <span class="text-sm text-gray-500 ml-8">(광주 동구 예술길 2-1)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-red-400 w-6 mr-3"></i>
+                            <div>
+                                <span class="text-gray-400">주최/주관:</span>
+                                <span class="ml-2 font-medium">노매드 그라운드</span>
+                                <br>
+                                <span class="text-sm text-gray-500 ml-8">청년범아티스트협회</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 bg-red-900 bg-opacity-30 rounded-lg border border-red-500 border-opacity-50">
+                    <div class="flex items-center text-yellow-300">
+                        <i class="fas fa-exclamation-triangle mr-3 text-xl"></i>
+                        <span class="font-medium text-lg">도슨트와 함께 진행되는 체험형 전시로 사전예약이 필수입니다</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Button -->
+        <section class="mb-12 text-center">
+            <a href="https://whattime.co.kr/nomadground/strangeframe2" 
+               target="_blank" 
+               class="booking-btn inline-block px-12 py-4 text-2xl font-bold text-white rounded-lg red-glow transform hover:scale-105">
+                <i class="fas fa-ticket-alt mr-3"></i>
+                지금 예약하기
+            </a>
+            <p class="mt-4 text-gray-400">
+                <i class="fas fa-link mr-2"></i>
+                예약 필수 | 선착순 마감
+            </p>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Prologue Section -->
+        <section class="mb-12">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8 text-red-400">
+                    <i class="fas fa-quote-left mr-3"></i>Prologue
+                </h2>
+                
+                <div class="info-card rounded-lg p-8">
+                    <div class="prologue-text text-gray-300 space-y-6">
+                        <p class="text-xl text-red-300 font-medium text-center italic">
+                            우리는 언제부터 진실을 외면하고, 낯선 불안을 '틀'에 가둔 채 살아왔을까요?
+                        </p>
+                        
+                        <p>
+                            조지 오웰의 『동물농장』이 경고했듯, 우리는 언제부터인가 진실을 외면하고 낯선 불안을 '틀'에 가둔 채 살아왔습니다. 단순화된 프레임과 생각 없이 소비되는 언어들 속에서, 진정한 자유와 행복을 잃어버린 것은 아닐까요?
+                        </p>
+                        
+                        <p>
+                            오늘날에도 나와 다른 생각을 쉽게 혐오하고, 자유를 가진 자들을 사냥하는 문화는 여전히 만연합니다.
+                        </p>
+                        
+                        <p class="text-red-200 font-medium">
+                            이번 전시는<br>
+                            공포라는 감각과 심리라는 구조를 통해,<br>
+                            우리가 무의식적으로 받아들여온 사회적 틀, 언어의 틀, 감정의 틀을 낯설고 생생하게 다시 들여다보는 실험입니다.
+                        </p>
+                        
+                        <p>
+                            누군가는 조용히 침묵하고, 누군가는 기꺼이 의심하며, 누군가는 끝내 스스로의 손으로 그 '틀'을 해체하게 될 것입니다.
+                        </p>
+                        
+                        <p>
+                            이 전시는 두려움으로 시작되지만,<br>
+                            스스로 질문하는 자만이<br>
+                            그 안에서 <strong class="text-red-400">진짜 '나'</strong>를 다시 마주할 수 있도록 설계되어 있습니다.
+                        </p>
+                        
+                        <p class="text-center text-red-300 font-medium text-xl italic">
+                            어쩌면, 이 체험을 통해 내가 몰랐던 '나의 틀'을 발견하게 될지도 모릅니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-80 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <h3 class="text-2xl font-bold text-red-400 mb-2">STRANGE FRAME 展</h3>
+                <p class="text-gray-400">수상한 틀 VER.2</p>
+            </div>
+            
+            <div class="text-sm text-gray-500 space-y-2">
+                <p>주최/주관: 노매드 그라운드, 청년범아티스트협회</p>
+                <p>장소: 향담갤러리 (광주 동구 예술길 2-1)</p>
+                <p class="flex items-center justify-center">
+                    <i class="fas fa-calendar mr-2"></i>
+                    2025.08.30 ~ 2025.09.05 | 13:00 ~ 21:00
+                </p>
+            </div>
+            
+            <div class="mt-6 pt-4 border-t border-gray-700 text-xs text-gray-600">
+                <p>&copy; 2025 노매드 그라운드 × 청년범아티스트협회. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"97230eee5e3b045c","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDhKK5WAAn%2BJpWoND%2BedpD6ziCVJcKbIzSJQ9jdidKbr45LPBXN5Uiog5N1L%2FRXOCDl2sl01Ph%2BYe2fohsArOXduFPkLB06hTB5OEftCKf0wWPHm%2FQm2QUq7w4lMPRv78ExYEotCc%2FWi3D7M92jLJxBJNUBLUHx%2BuJZ51gJeRFzcLE%2FJQ7GeBXn45ThoWVLKDvjJ2q0SnROpzr4HNBqPLU3mxaNtpDM0b0CWhQ7PPVIAjzGfPPiQ3VqOqYy9R4P1VjMgjqS4jxVNerNn%2BJeQgwFe9ZQDSjSZeCv4qKFQmH24dqX%2FdYR1SAtjrOnEnBFU7kmpkFEnW8LUyyxIXz0f9Me41RBNrNsk0HzUaU4WIn%2BsYS7i9i8K2fMy977uHFJ343aWvh2v7jw2i7APMDYvvsbxS05eOcycBcHnQJL95kClfOcwrcKwbt%2BVG60zg1sSXFIcYoEu7mlrhfDNN7cRKwsx8BTWsIyHcoBnQQxB728pmQcx0kXRRvnhOI2eQbCcZsg%3D%3D";
+        window.__genspark_locale = "ko-KR";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDhKK5WAAn+JpWoND+edpD6ziCVJcKbIzSJQ9jdidKbr45LPBXN5Uiog5N1L/RXOCDl2sl01Ph+Ye2fohsArOXduFPkLB06hTB5OEftCKf0wWPHm/Qm2QUq7w4lMPRv78ExYEotCc/Wi3D7M92jLJxBJNUBLUHx+uJZ51gJeRFzcLE/JQ7GeBXn45ThoWVLKDvjJ2q0SnROpzr4HNBqPLU3mxaNtpDM0b0CWhQ7PPVIAjzGfPPiQ3VqOqYy9R4P1VjMgjqS4jxVNerNn+JeQgwFe9ZQDSjSZeCv4qKFQmH24dqX/dYR1SAtjrOnEnBFU7kmpkFEnW8LUyyxIXz0f9Me41RBNrNsk0HzUaU4WIn+sYS7i9i8K2fMy977uHFJ343aWvh2v7jw2i7APMDYvvsbxS05eOcycBcHnQJL95kClfOcwrcKwbt+VG60zg1sSXFIcYoEu7mlrhfDNN7cRKwsx8BTWsIyHcoBnQQxB728pmQcx0kXRRvnhOI2eQbCcZsg==";
+    </script>
+    
+        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
+        
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
